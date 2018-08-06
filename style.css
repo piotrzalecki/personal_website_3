@@ -1,0 +1,782 @@
+/*
+	Theme Name: Piotr Zalecki Website Theme
+	Author: Piotr Zalecki
+	Author URI: http://piotrzalecki.com
+	Description: Theme of Piotr Zalecki's personal website
+	Version: 1.0
+*/
+
+
+body{
+  font-family: 'Oswald', sans-serif;
+  color: #004B8D;
+  background-color: #FFFAFA;
+  margin: 0;
+}
+
+img{
+  z-index: 10;
+}
+.fa-lg{
+  margin-right: 10px;
+}
+
+h1,h2,h3,h4{
+  text-transform: uppercase;
+}
+
+a, a:visited{
+  color: #004B8D;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #00AE94;
+    text-decoration: none;
+}
+
+a:active{
+  color:#004B8D;
+}
+
+.index-section-img{
+  max-width: 100%;
+}
+
+a.button{
+  background-color: #004B8D;
+  color: #FFFAFA !important;
+  border: 2px solid #004B8D;
+  display: inline-block;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+a.button:hover{
+  background-color:#00AE94;
+  color: #30062B;
+  transition: 0.3s;
+}
+
+.clearfix{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*ASIDE*/
+
+aside{
+  text-align: center;
+  padding-right: 5%;
+}
+
+aside section{
+  margin: 20% 0;
+}
+
+aside section:nth-of-type(2n){
+  color: #00AE94;
+}
+
+
+/*NAV STYLES*/
+
+.nav-right{
+  text-align: right;
+}
+
+.nav-search{
+  float: right;
+  height: 2px;
+}
+
+.logo-image{
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-right li{
+  display: inline-block;
+  padding-right: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-right a{
+  text-decoration: none;
+  display: block;
+  border-bottom: 3px solid #FFFAFA;
+}
+
+.nav-right a:hover{
+  border-bottom: 3px solid #05AF96;
+  transition: 0.3s;
+  color: #004B8D;
+}
+
+.sub-nav-about{
+  margin-left: 0;
+}
+
+.sub-nav-about ul{
+  padding-left: 0;
+}
+
+.sub-nav-about li{
+ display: inline-block;
+ padding-right: 10px;
+ padding-left: 4px;
+ border-left: 4px solid #004B8D;
+}
+
+.sub-nav-about li:first-child{
+ padding-left: 0px;
+ border-left: none;
+}
+
+
+/*HEADER*/
+
+header.description{
+  margin: 5% 5%;
+}
+
+header.frontpage{
+  text-align: center;
+  background-position: center;
+  background-repeat: space;
+  background-attachment: fixed;
+}
+
+
+header section{
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+header section h1, header section p{
+  padding: 1%;
+}
+
+
+/*SECTION*/
+
+section.main div.row{
+  min-height: 400px;
+}
+
+.main-icon{
+  text-align: center;
+}
+
+.main-content-left{
+  text-align: right;
+}
+
+
+/*FOOTER*/
+
+footer{
+  background-color: #FAF0E6;
+  padding: 2% 5%;
+  height: 10%;
+}
+
+footer section:first-child{
+  text-align: justify;
+}
+
+footer section{
+  text-align: center;
+}
+
+footer section ul{
+  padding: 0px;
+}
+
+footer section li{
+  display: inline-block;
+}
+
+
+/*SEARCH PAGE*/
+
+section.search-page{
+  margin: 0 5%;
+}
+
+
+/*PORTFOLIO SITE*/
+
+section.portfolio a:hover{
+  color: #00AE94;
+}
+
+article.portfolio-item{
+  margin:10px;
+  text-align: center;
+  position: relative;
+  border-bottom: 5px solid #FFFAFA;
+}
+
+article.portfolio-item:hover{
+  border-bottom: 5px solid #05AF96;
+  transition: 0.3s;
+  color: #00AE94;
+}
+
+.portfolio-single-aside{
+  text-align: center;
+}
+
+.portfolio-single-aside ul{
+  list-style: none;
+  padding: 0;
+}
+
+.portfolio-single-aside li{
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+
+/*LEARNING PATH*/
+
+section.learing-path{
+  margin: 5% 5%;
+}
+
+table.learning-path{
+  text-align: left;
+  margin: 5% 0;
+}
+
+table.learning-path td, table.learning-path th{
+  padding: 10px;
+}
+
+table.learning-path td:first-child{
+  vertical-align: top;
+}
+
+img.certyficate {
+  width: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+/*IMAGE ZOOM IN FROM W3SCHOOLS*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* #30062B w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*ABOUT ME*/
+
+.about-me{
+  margin: 0 5%;
+}
+
+.about-img {
+  max-width: 30%;
+  float:right;
+  margin: 15px;
+}
+
+.cv-version{
+  font-style: italic;
+  display: block;
+  cursor: pointer;
+}
+
+#long-cv-version{
+  display: none;
+}
+
+#short-employment-history{
+  display: none;
+}
+
+/*CONTACT BASED ON W3SCHOOLS*/
+/* Style inputs with type="text", select elements and textareas */
+input, textarea {
+   width: 60%; /* Full width */
+   padding: 12px; /* Some padding */
+   border: 1px solid #ccc; /* Gray border */
+   border-radius: 4px; /* Rounded borders */
+   box-sizing: border-box; /* Make sure that padding and width stays in place */
+   margin-top: 6px; /* Add a top margin */
+   margin-bottom: 16px; /* Bottom margin */
+   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+   display:block;
+   color: #004B8D;
+   background-color: #FFFAFA;
+}
+
+label{
+  display: block;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+   background-color: #004B8D;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+   background-color: #00AE94;
+}
+
+.mobile-menu{
+  text-align: center;
+  width: 10%;
+  background-color:#004B8D;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 100;
+}
+
+.sub-nav-about li{
+    text-transform: uppercase;
+}
+
+/*
+///////////////// MEDIA QUERIES///////////////////////////
+*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+      nav{
+        margin: 2% 1%;
+      }
+
+      .nav-search{
+        width: 100%;
+      }
+
+      footer section:first-child{
+        display: none;
+      }
+
+      header section{
+        padding-top: 15%;
+      }
+
+      section.portfolio{
+        padding: 0 1%;
+      }
+
+      .portfolio-single{
+        padding: 1% ;
+      }
+
+      .cv{
+        padding: 1%;
+      }
+
+      .sub-nav-about li{
+         display:block;
+       }
+
+     header.description{
+         margin: 5% 1%;
+     }
+
+     section.main div.row{
+      text-align: center;
+      min-height: 200px;
+      margin: 10% 0 5% 0;
+     }
+
+     .main-icon{
+       text-align: center;
+     }
+
+     .main-content-left{
+       text-align: center;
+     }
+
+     header section{
+       padding-top: 15%;
+       max-width: 98%;
+       margin: 0 auto;
+     }
+
+    th.bigger-screen, td.bigger-screen{
+      display: none;
+    }
+
+    .main-icon-bigger-screen{
+      display: none;
+    }
+
+    .nav-right{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 40%;
+      height: 100%;
+      background-color:  #004B8D;
+      display: none;
+      z-index: 10000;
+    }
+
+    .nav-right li{
+      color: white;
+      padding-top:20%;
+      margin: 5% 5%;
+      display: block;
+    }
+
+    .nav-right li a, .nav-right li a:hover{
+      color: white;
+      display: inline-block;
+    }
+
+    .nav-left{
+      text-align: center;
+    }
+
+    .nav-right ul{
+      text-align: left;
+      padding-left: 2px;
+    }
+
+    input, textarea {
+      width: 100%;
+     }
+
+    .modal-content {
+      width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+      /* footer{
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 2%;
+        grid-template-rows: auto;
+      } */
+
+      nav{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: auto;
+        margin: 2% 3%;
+      }
+
+      header section{
+        padding-top: 15%;
+      }
+
+      .mobile-menu{
+        display: none;
+      }
+
+      nav{
+        margin: 2% 3%;
+      }
+
+      section.portfolio{
+        padding: 0 3%;
+      }
+
+      .portfolio-single{
+          padding: 3% ;
+      }
+
+      .cv{
+          padding: 3%;
+      }
+
+     header.description{
+       margin: 5% 3%;
+     }
+
+     section.main div.row{
+      min-height: auto;
+      margin:10% 5%;
+     }
+
+     .main-content-right, .main-content-left {
+       text-align: center;
+     }
+
+     .main-icon{
+       text-align: center;
+     }
+
+     .main-content-left{
+       text-align: center;
+     }
+
+     header section{
+       padding-top: 15%;
+       max-width: 94%;
+       margin: 0 auto;
+     }
+
+    th.bigger-screen, td.bigger-screen{
+      display: none;
+    }
+
+    .main-icon-bigger-screen{
+      display: none;
+    }
+
+    header.frontpage{
+      height: 300px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* footer{
+      display: grid;
+      grid-template-columns: 32% 32% 32%;
+      grid-gap: 2%;
+      grid-template-rows: auto;
+    } */
+
+    nav{
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: auto;
+      margin: 2% 5%;
+    }
+
+    .nav-search{
+      width: 50%;
+
+    }
+
+    /* section.main{
+      display: grid;
+      grid-template-columns: 49% 49%;
+      grid-gap: 2%;
+      margin: 0 5%;
+    }
+
+    section.portfolio{
+      display: grid;
+      grid-template-columns: 48% 48%;
+      grid-gap: 4%;
+      grid-template-rows: auto;
+      }
+
+    .portfolio-single{
+      display: grid;
+      grid-template-columns: 80% 20%;
+      grid-gap:5%;
+      grid-template-rows: auto;
+      padding: 5% ;
+    } */
+
+    nav{
+      margin: 2% 5%;
+    }
+
+    section.portfolio{
+      padding: 0 5%;
+    }
+
+    .portfolio-single{
+        padding: 5% ;
+    }
+
+    .cv{
+        padding: 5%;
+    }
+
+   header.description{
+     margin: 5% 5%;
+   }
+
+   .main-icon{
+     text-align: center;
+   }
+
+   .main-content-left{
+     text-align: right;
+   }
+
+   .main-content-right{
+     text-align: left;
+   }
+
+   header section{
+     padding-top: 15%;
+     max-width: 94%;
+     margin: 0 auto;
+   }
+
+    th.bigger-screen, td.bigger-screen{
+      display:block;
+    }
+
+    td.bigger-screen img{
+      margin-top: 50%;
+    }
+
+    .main-icon-bigger-screen{
+      display: block;
+    }
+
+    .main-icon-small-screen{
+      display: none;
+    }
+
+    img.small-screen{
+      display: none;
+    }
+
+    header.frontpage{
+      height: 400px;
+    }
+
+    .main-icon{
+       font-size: 1.5em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* section.main{
+      display: grid;
+      grid-template-columns: 45% 45%;
+      grid-gap: 10%;
+      margin: 0 5%;
+    } */
+
+    /* footer{
+      display: grid;
+      grid-template-columns: 32% 32% 32%;
+      grid-gap: 2%;
+      grid-template-rows: auto;
+    } */
+
+    /* section.portfolio{
+      display: grid;
+      grid-template-columns: 32% 32% 32%;
+      grid-gap: 2%;
+      grid-template-rows: auto;
+      padding: 0 5%;
+    }
+
+    .portfolio-single{
+      display: grid;
+      grid-template-columns: 70% 25%;
+      grid-gap:5%;
+      grid-template-rows: auto;
+      padding: 5% ;
+    }
+
+    .cv{
+      display: grid;
+      grid-template-columns: 25% 75%;
+      grid-gap:5%;
+      grid-template-rows: auto;
+      padding: 5% ;
+    }
+
+    .content-wraper{
+      display: grid;
+      grid-template-columns: 24% 74%;
+      grid-gap:2%;
+      grid-template-rows: auto;
+      padding: 5% ;
+    } */
+
+    aside{
+      border-right: 2px solid  #004B8D;
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+
+
+      header section{
+        padding-top: 1%;
+      }
+}
